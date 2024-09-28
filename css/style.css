@@ -8,7 +8,7 @@ body, html {
 
 /* Hero Image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.ctfassets.net%2Fs5n2t79q9icq%2F5Z5BZ90db9laZwDh9hO7RP%2F83ea76b645bfaad7973099d009f67356%2Fjace-beleren-1920.jpg%3Fq%3D80&f=1&nofb=1&ipt=69e0dfe684186a28ab5cce4f401a8bb609b929bd18d2f9f45f3d1d254d31d3eb&ipo=images");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/chandra.png");
   height: 80vh; /* Full viewport height for better centering */
   background-position: center;
   background-repeat: no-repeat;
