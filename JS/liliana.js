@@ -38,7 +38,7 @@ const oneSetLogo = async () => {
 const symbol = async () => {
     let response = await axios.get(`https://api.scryfall.com/symbology`);
     let manaIconRed = response.data.data;
-    let redMana = manaIconRed.find((symbolObj) => symbolObj.symbol === "{R}");
+    let redMana = manaIconRed.find((symbolObj) => symbolObj.symbol === "{B}");
     manaSymbol.setAttribute("src", redMana.svg_uri);
 };
 
@@ -46,23 +46,23 @@ const symbol = async () => {
 //COMPANION
 
 const firstCompanion = async () => {
-    let response = await axios.get(`https://api.scryfall.com/cards/search?order=set&q=e%3Amat`);
-    let firstCard = response.data.data[48];
-    let imageUrl = firstCard.image_uris?.art_crop;
+    let response = await axios.get(`https://api.scryfall.com/cards/search?order=set&q=e%3Amh3&page=2`);
+    let firstCard = response.data.data[72];
+    let imageUrl = firstCard.card_faces[0].image_uris.art_crop;
     companionOne.setAttribute("src", imageUrl); // Set the image src
 };
 
 const secondCompanion = async () => {
-    let response = await axios.get(`https://api.scryfall.com/cards/search?order=set&q=e%3Amat`);
-    let secondCard = response.data.data[40];
+    let response = await axios.get(`https://api.scryfall.com/cards/search?q=e%3Ae01`);
+    let secondCard = response.data.data[57];
     let imageUrl = secondCard.image_uris?.art_crop;
     companionTwo.setAttribute("src", imageUrl); // Set the image src
 };
 
 const thirdCompanion = async () => {
-    let response = await axios.get(`https://api.scryfall.com/cards/2a717b98-cdac-416d-bf6c-f6b6638e65d1`);
-    let thirdCard = response.data.card_faces[0];
-    let imageUrl = thirdCard.image_uris?.art_crop;
+    let response = await axios.get(`https://api.scryfall.com/cards/search?format=json&include_extras=false&order=collector_number&page=2&q=e%3Amm2&unique=cards`);
+    let thirdCard = response.data.data[43].image_uris.art_crop;
+    let imageUrl = thirdCard;
     companionThree.setAttribute("src", imageUrl); // Set the image src
 };
 
@@ -78,23 +78,24 @@ const companionLargeBlock = async () => {
 
 // abilitySmallOne
 const companionOneSmall = async () => {
-    let response = await axios.get(`https://api.scryfall.com/cards/search?order=collector_number&q=e%3Aori`);
-    let smallCompanionImageOne = response.data.data[40];
+    let response = await axios.get(`https://api.scryfall.com/cards/search?order=set&q=e%3Awar`);
+    let smallCompanionImageOne = response.data.data[97];
     let imageUrl = smallCompanionImageOne.image_uris?.art_crop;
     companionSmallOne.setAttribute("src", imageUrl);
 };
 
 // abilitySmallTwo
 const companionTwoSmall = async () => {
-    let response = await axios.get(`https://api.scryfall.com/cards/search?order=set&q=e%3Am20`);
-    let smallCompanionImageTwo = response.data.data[128];
+    let response = await axios.get(`https://api.scryfall.com/cards/search?order=set&q=e%3Am19&page=2`);
+    console.log(response.data.data)
+    let smallCompanionImageTwo = response.data.data[100];
     let imageUrl = smallCompanionImageTwo.image_uris?.art_crop;
     companionSmallTwo.setAttribute("src", imageUrl);
 };
 
 // abilitySmallThree
 const companionThreeSmall = async () => {
-    let response = await axios.get(`https://api.scryfall.com/cards/search?format=json&include_extras=true&order=set&page=2&q=e%3Am21`);
+    let response = await axios.get(`https://api.scryfall.com/cards/search?order=set&q=e%3Am19`);
     let smallCompanionImageThree = response.data.data[103];
     let imageUrl = smallCompanionImageThree.image_uris?.art_crop;
     companionSmallThree.setAttribute("src", imageUrl);

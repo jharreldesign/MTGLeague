@@ -8,7 +8,7 @@ body, html {
   
   /* Hero Image */
   .chandra-hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/chandra.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/nissa.png");
     height: 80vh; /* Full viewport height for better centering */
     background-position: center;
     background-repeat: no-repeat;
