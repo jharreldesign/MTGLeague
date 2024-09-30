@@ -1,5 +1,3 @@
-console.log("hello");
-
 const otjLogoContainer = document.querySelector("#otjLogoContainer");
 const dmuImageContainer = document.querySelector("#dmuImageContainer");
 const oneImageContainer = document.querySelector("#oneImageContainer");
@@ -49,21 +47,21 @@ const firstCompanion = async () => {
     let response = await axios.get(`https://api.scryfall.com/cards/search?q=e%3Awar`);
     let firstCard = response.data.data[134].image_uris.art_crop;
     let imageUrl = firstCard
-    companionOne.setAttribute("src", imageUrl); // Set the image src
+    companionOne.setAttribute("src", imageUrl); 
 };
 
 const secondCompanion = async () => {
     let response = await axios.get(`https://api.scryfall.com/cards/search?q=e%3Amom`);
     let secondCard = response.data.data[8].image_uris.art_crop;
     let imageUrl = secondCard
-    companionTwo.setAttribute("src", imageUrl); // Set the image src
+    companionTwo.setAttribute("src", imageUrl); 
 };
 
 const thirdCompanion = async () => {
     let response = await axios.get(`https://api.scryfall.com/cards/search?q=e%3Amom&page=2`);
     let thirdCard = response.data.data[14].image_uris.art_crop;
     let imageUrl = thirdCard;
-    companionThree.setAttribute("src", imageUrl); // Set the image src
+    companionThree.setAttribute("src", imageUrl);
 };
 
 //--------------ABILITIES SECTION--------------------------------------------//
@@ -102,12 +100,10 @@ const companionThreeSmall = async () => {
     companionSmallThree.setAttribute("src", imageUrl);
 };
 
-// Function to change ability to the large image
 function setLargeImage(source) {
     largeImage.src = source;
 }
 
-// Add event listeners to the small images
 companionSmallOne.addEventListener("click", function () {
     setLargeImage(companionSmallOne.src);
 });
@@ -119,9 +115,6 @@ companionSmallTwo.addEventListener("click", function () {
 companionSmallThree.addEventListener("click", function () {
     setLargeImage(companionSmallThree.src);
 });
-
-
-
 
 //----SET LOGOS----//
 otjSetLogo();

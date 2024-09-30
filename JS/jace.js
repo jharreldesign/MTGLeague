@@ -112,11 +112,6 @@ companionSmallThree.addEventListener("click", function () {
     setLargeImage(companionSmallThree.src);
 });
 
-//-----------------CAROUSEL--------------------------//
-// https://api.scryfall.com/cards/search?q=jace
-
-
-
 //----SET LOGOS----//
 otjSetLogo();
 dmuSetLogo();

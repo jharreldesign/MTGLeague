@@ -3,23 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <script defer src="./JS/index.js"></script>
     <title>MTG: League</title>
   </head>
   <body>
-    <img class="plainswalkerLogo" src="./images/PlainswalkerLogo.png" alt=""><span><h1>MTG League</h1></span>
-    <div class="topnav">
-      <a class="active" href="#home">HOME</a>
-      <a href="#news">NEWS</a>
-      <a href="#teams">TEAMS</a>
-      <a href="#standings">STANDINGS</a>
-    </div>
-    <section class="news">
-        <div class="newsSection">
-            <h2>NEWS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit tempore impedit, deleniti quod vitae omnis est id, consectetur voluptatibus dolorum minus veniam dolore molestiae ea libero voluptatem repellendus pariatur consequuntur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit tempore impedit, deleniti quod vitae omnis est id, consectetur voluptatibus dolorum minus veniam dolore molestiae ea libero voluptatem repellendus pariatur consequuntur.</p>
-        </div>
-        <img class="newsImage" src="./images/mtg-colors-wheel.jpg" alt="Placeholder Text">
+    <!-- Navigation Bar -->
+    <nav class="topnav">
+      <div class="logo-title-container">
+        <a href="./index.html" class="logo-title-link">
+          <img
+            class="navlogo"
+            src="./images/MagicLogo.png"
+            alt="Magic The Gathering Logo"
+          />
+          <h1>THE LEAGUE</h1>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="./index.html">HOME</a>
+        <a href="./team.html">TEAMS</a>
+        <a href="./allplaneswalker.html">PLANESWALKER</a>
+      </div>
+    </nav>
+
+    <!-- Hero Image -->
+    <section class="hero">
+      <img
+        src="./images/PlaneswalkerPantheon.png"
+        alt="Hero Image"
+        class="hero-image"
+      />
+      <div class="overlay"></div>
+      <div class="hero-text">
+        <h2>Welcome to the Gathering</h2>
+        <img src="./images/planeswalkermobile.png" alt="" />
+      </div>
     </section>
+
+    <section class="news-section">
+      <div class="news-text">
+        <h3>Latest News</h3>
+        <p>
+          The Magic: The Gathering planes have been controlled by the five
+          Planeswalkers for too long. As each plane rises to create plans to
+          take down each Planeswalker, it's up to us to create teams to put a
+          stop to what has started.
+        </p>
+      </div>
+      <div class="news-image">
+        <img src="./images/planeswalker2.png" alt="News Image" />
+      </div>
+    </section>
+
+    <!-- PLANESWALKER ROW GRID -->
+    <section id="planeswalker-grid">
+        <div class="planeswalker-card">
+            <img src="./images/anjani.png" alt="Anjani">
+            <div class="planeswalker-info">
+              <img id="whiteMana" class="mana-planeswalker-card" alt=""/>
+                <div class="icon-name-container">
+                    <h2>Anjani</h2>
+                </div>
+            </div>
+        </div>
+    </a>
+    
+
+      <a href="./jace.html" class="planeswalker-card-link">
+          <div class="planeswalker-card">
+              <img src="./images/jace.png" alt="Jace">
+              <div class="planeswalker-info">
+                  <div class="icon-name-container">
+                      <img id="manaIconBlue" src="" alt="Blue Mana Icon">
+                      <h2>Jace</h2>
+                  </div>
+              </div>
+          </div>
+      </a>
+
+      <a href="./liliana.html" class="planeswalker-card-link">
+          <div class="planeswalker-card">
+              <img src="./images/liliana.png" alt="Liliana">
+              <div class="planeswalker-info">
+                  <div class="icon-name-container">
+                      <img id="manaIconBlack" src="" alt="Black Mana Icon">
+                      <h2>Liliana</h2>
+                  </div>
+              </div>
+          </div>
+      </a>
+
+      <a href="./chandra.html" class="planeswalker-card-link">
+          <div class="planeswalker-card">
+              <img src="./images/chandra.png" alt="Chandra">
+              <div class="planeswalker-info">
+                  <div class="icon-name-container">
+                      <img id="manaIconRed" src="" alt="Red Mana Icon">
+                      <h2>Chandra</h2>
+                  </div>
+              </div>
+          </div>
+      </a>
+
+      <a href="./nissa.html" class="planeswalker-card-link">
+          <div class="planeswalker-card">
+              <img src="./images/nissa.png" alt="Nissa">
+              <div class="planeswalker-info">
+                  <div class="icon-name-container">
+                      <img id="manaIconGreen" src="" alt="Green Mana Icon">
+                      <h2>Nissa</h2>
+                  </div>
+              </div>
+          </div>
+      </a>
+  </section>
+
+    <!-- Planeswalker Logos/Mana logos -->
+    <section id="planeswalkers">
+      <h3>Planeswalkers</h3>
+      <!-- <div class="planeswalker-container">
+        <a href="./anjani.html"><img id="whiteMana" class="mana-image" src="" alt=""/></a>
+        <a href="./plainswalker.html"><img id="blueMana" class="mana-image" src="" alt=""/></a>
+        <a href="./liliana.html"><img id="blackMana" class="mana-image" src="" alt=""/></a>
+        <a href="./chandra.html"><img id="redMana" class="mana-image" src="" alt=""/></a>
+        <a href="./nissa.html"><img id="greenMana" class="mana-image" src="" alt=""/></a>
+      </div> -->
+    </section>
+    <hr />
+    <section id="teams">
+      <h3>Teams</h3>
+      <div class="team-container">
+        <a href="./anjani.html"><img id="dskIcon" class="set-icon" src="" alt=""/></a>
+        <a href="./plainswalker.html"><img id="blbIcon" class="set-icon" src="" alt=""/></a>
+        <a href="./liliana.html"><img id="otjIcon" class="set-icon" src="" alt=""/></a>
+        <a href="./chandra.html"><img id="mkmIcon" class="set-icon" src="" alt=""/></a>
+        <a href="./nissa.html"><img id="dmuIcon" class="set-icon" src="" alt=""/></a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <nav class="footer">
+        <div class="footer-logo-title-container">
+          <a href="./index.html" class="logo-title-link">
+            <img
+              class="navlogo"
+              src="./images/MagicLogo.png"
+              alt="Magic The Gathering Logo"
+            />
+            <h1>THE LEAGUE</h1>
+          </a>
+        </div>
+        <div class="footer-nav-links">
+          <a href="">HOME</a>
+          <a href="">TEAMS</a>
+          <a href="">PLANESWALKER</a>
+          <a href="">INFORMATION</a>
+          <h3>Designed by: Jason Harrel</h3>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;                     
+    padding: 20px;                 
+    background-color: #f4f4f4;     
+}
+
+h1 {
+    text-align: center;            
+    color: #333;                 
+}
+
+.image-container {
+    display: flex;                 
+    flex-wrap: wrap;              
+    justify-content: center;       
+    margin-top: 20px;            
+}
+
+.image-container img {
+    width: 100px;
+    height: auto;                 
+    margin: 5px;                   
+    border-radius: 5px;           
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+}
+
+
+.image-container img:hover {
+    transform: scale(2);         
+    z-index: 1;                    
+}
+
+.teamInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

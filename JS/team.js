@@ -4,11 +4,11 @@ const teamBlackMana = document.querySelector('#teamBlackMana');
 const teamRedMana = document.querySelector('#teamRedMana');
 const teamGreenMana = document.querySelector('#teamGreenMana');
 
-const teamBlackRedMana = document.querySelector('#teamBlackRedMana');
-const teamGreenBlackMana = document.querySelector('#teamGreenBlackMana');
-const teamGreenWhiteMana = document.querySelector('#teamGreenWhiteMana');
-const teamWhiteRedMana = document.querySelector('#teamWhiteRedMana');
-const teamBlueRedMana = document.querySelector('#teamBlueRedMana');
+const dskLogoContainer = document.querySelector('#dskLogoContainer');
+const blbLogoContainer = document.querySelector('#blbLogoContainer');
+const mkmLogoContainer = document.querySelector('#mkmLogoContainer');
+const otjLogoContainer = document.querySelector('#otjLogoContainer');
+const dmuLogoContainer = document.querySelector('#dmuLogoContainer');
 
 const teamWhiteLogo = async () => {
     let response = await axios.get(`https://api.scryfall.com/symbology`);
@@ -55,49 +55,36 @@ const teamGreenLogo = async () => {
     teamGreenMana.setAttribute("src", teamMana)
 };
 
-const teamBlackRedLogo = async () => {
-    let response = await axios.get(`https://api.scryfall.com/symbology`);
+// TEAMS
 
-    let blackRedTeamLogo = response.data.data[38];
-
-    let teamMana = blackRedTeamLogo.svg_uri
-    teamBlackRedMana.setAttribute("src", teamMana)
+const teamDSK = async () => {
+    let response = await axios.get(`https://api.scryfall.com/sets/dsk`);
+    let logoDSK = response.data.icon_svg_uri;
+    dskLogoContainer.setAttribute("src", logoDSK);
 };
 
-const teamGreenBlackLogo = async () => {
-    let response = await axios.get(`https://api.scryfall.com/symbology`);
-
-    let blackGreenTeamLogo = response.data.data[39];
-
-    let teamMana = blackGreenTeamLogo.svg_uri
-    teamGreenBlackMana.setAttribute("src", teamMana)
+const teamBLB = async () => {
+    let response = await axios.get(`https://api.scryfall.com/sets/blb`);
+    let logoBLB = response.data.icon_svg_uri;
+    blbLogoContainer.setAttribute("src", logoBLB);
 };
 
-const teamGreenWhiteLogo = async () => {
-    let response = await axios.get(`https://api.scryfall.com/symbology`);
-
-    let whiteGreenTeamLogo = response.data.data[44];
-
-    let teamMana = whiteGreenTeamLogo.svg_uri
-    teamGreenWhiteMana.setAttribute("src", teamMana)
+const teamMKM = async () => {
+    let response = await axios.get(`https://api.scryfall.com/sets/mkm`);
+    let logoMKM = response.data.icon_svg_uri;
+    mkmLogoContainer.setAttribute("src", logoMKM);
 };
 
-const teamWhiteRedLogo = async () => {
-    let response = await axios.get(`https://api.scryfall.com/symbology`);
-
-    let whiteRedTeamLogo = response.data.data[43];
-
-    let teamMana = whiteRedTeamLogo.svg_uri
-    teamWhiteRedMana.setAttribute("src", teamMana)
+const teamOTJ = async () => {
+    let response = await axios.get(`https://api.scryfall.com/sets/otj`);
+    let logoOTJ = response.data.icon_svg_uri;
+    otjLogoContainer.setAttribute("src", logoOTJ);
 };
 
-const teamBlueRedLogo = async () => {
-    let response = await axios.get(`https://api.scryfall.com/symbology`);
-
-    let blueRedTeamLogo = response.data.data[41];
-
-    let teamMana = blueRedTeamLogo.svg_uri
-    teamBlueRedMana.setAttribute("src", teamMana);
+const teamDMU = async () => {
+    let response = await axios.get(`https://api.scryfall.com/sets/dmu`);
+    let logoDMU = response.data.icon_svg_uri;
+    dmuLogoContainer.setAttribute("src", logoDMU);
 }
 
 teamWhiteLogo();
@@ -105,8 +92,9 @@ teamBlueLogo();
 teamBlackLogo();
 teamRedLogo();
 teamGreenLogo();
-teamBlackRedLogo();
-teamGreenBlackLogo();
-teamGreenWhiteLogo();
-teamWhiteRedLogo();
-teamBlueRedLogo();
+
+teamDSK();
+teamBLB();
+teamMKM();
+teamOTJ();
+teamDMU();

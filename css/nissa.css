@@ -7,9 +7,9 @@ body, html {
   }
   
   /* Hero Image */
-  .chandra-hero-image {
+  .nissa-hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/nissa.png");
-    height: 80vh; /* Full viewport height for better centering */
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@ body, html {
     align-items: center;
   }
   
-  .chandra-hero-text {
+  .nissa-hero-text {
     text-align: center;
     color: white;
     display: flex;
@@ -69,7 +69,7 @@ body, html {
   .companions-container {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Space between companion blocks */
+    gap: 30px; 
   }
   
   .companion {
@@ -85,7 +85,7 @@ body, html {
   }
   
   .companion img {
-    height: 150px; /* Adjust the size as needed */
+    height: 150px; 
     width: auto;
     border-radius: 8px;
     border: 2px solid white;
@@ -153,6 +153,3 @@ body, html {
   .abilities-images img:hover {
     transform: scale(1.1);
   }
-  
-  /* ------CARD CAROUSEL------------ */
-  
