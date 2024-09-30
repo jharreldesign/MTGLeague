@@ -9,7 +9,7 @@ body, html {
   /* Hero Image */
   .liliana-hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/liliana.png");
-    height: 80vh; /* Full viewport height for better centering */
+    height: 80vh; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

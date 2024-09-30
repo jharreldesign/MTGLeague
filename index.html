@@ -45,12 +45,12 @@
 
     <section class="news-section">
       <div class="news-text">
-        <h3>Latest News</h3>
+        <h2>Latest News</h2>
         <p>
-          The Magic: The Gathering planes have been controlled by the five
-          Planeswalkers for too long. As each plane rises to create plans to
-          take down each Planeswalker, it's up to us to create teams to put a
-          stop to what has started.
+          Thin clouds hung hazy in the sky, blocking the light from both the greater and lesser suns, turning the street below into a twilit landscape of shifting shadows and uncertain dangers. A wind brushed along the walkways, a skirl of dry autumn leaves spinning orange and brown within its clutches. Despite the gloom, it was midday; most of the houses were empty, their inhabitants off at work or school, leaving the street to rest in uneasy slumber. The gray weight of winter was looming, but for now it was brittle, changeable fall, shifting between clement and chilling in an instant.
+          <br>
+          <br>
+          This is when they came...
         </p>
       </div>
       <div class="news-image">
@@ -59,13 +59,15 @@
     </section>
 
     <!-- PLANESWALKER ROW GRID -->
+     <h1 class="planeswalker-title">PLANESWALKERS</h1>
     <section id="planeswalker-grid">
+
+      <a href="./ajani.html" class="planeswalker-card-link">
         <div class="planeswalker-card">
-            <img src="./images/anjani.png" alt="Anjani">
+            <img id="ajaniProfileImage" src="" alt="Ajani">
             <div class="planeswalker-info">
-              <img id="whiteMana" class="mana-planeswalker-card" alt=""/>
                 <div class="icon-name-container">
-                    <h2>Anjani</h2>
+                    <h2>Ajani</h2>
                 </div>
             </div>
         </div>
@@ -74,10 +76,9 @@
 
       <a href="./jace.html" class="planeswalker-card-link">
           <div class="planeswalker-card">
-              <img src="./images/jace.png" alt="Jace">
+              <img id="jaceProfileImage" src="" alt="Jace">
               <div class="planeswalker-info">
                   <div class="icon-name-container">
-                      <img id="manaIconBlue" src="" alt="Blue Mana Icon">
                       <h2>Jace</h2>
                   </div>
               </div>
@@ -86,10 +87,9 @@
 
       <a href="./liliana.html" class="planeswalker-card-link">
           <div class="planeswalker-card">
-              <img src="./images/liliana.png" alt="Liliana">
+              <img id="lilianaProfileImage" src="" alt="Liliana">
               <div class="planeswalker-info">
                   <div class="icon-name-container">
-                      <img id="manaIconBlack" src="" alt="Black Mana Icon">
                       <h2>Liliana</h2>
                   </div>
               </div>
@@ -98,10 +98,9 @@
 
       <a href="./chandra.html" class="planeswalker-card-link">
           <div class="planeswalker-card">
-              <img src="./images/chandra.png" alt="Chandra">
+              <img id="chandraProfileImage" src="" alt="Chandra">
               <div class="planeswalker-info">
                   <div class="icon-name-container">
-                      <img id="manaIconRed" src="" alt="Red Mana Icon">
                       <h2>Chandra</h2>
                   </div>
               </div>
@@ -110,10 +109,9 @@
 
       <a href="./nissa.html" class="planeswalker-card-link">
           <div class="planeswalker-card">
-              <img src="./images/nissa.png" alt="Nissa">
+              <img id="nissaProfileImage" src="" alt="Nissa">
               <div class="planeswalker-info">
                   <div class="icon-name-container">
-                      <img id="manaIconGreen" src="" alt="Green Mana Icon">
                       <h2>Nissa</h2>
                   </div>
               </div>
@@ -122,18 +120,66 @@
   </section>
 
     <!-- Planeswalker Logos/Mana logos -->
-    <section id="planeswalkers">
-      <h3>Planeswalkers</h3>
-      <!-- <div class="planeswalker-container">
-        <a href="./anjani.html"><img id="whiteMana" class="mana-image" src="" alt=""/></a>
-        <a href="./plainswalker.html"><img id="blueMana" class="mana-image" src="" alt=""/></a>
-        <a href="./liliana.html"><img id="blackMana" class="mana-image" src="" alt=""/></a>
-        <a href="./chandra.html"><img id="redMana" class="mana-image" src="" alt=""/></a>
-        <a href="./nissa.html"><img id="greenMana" class="mana-image" src="" alt=""/></a>
-      </div> -->
-    </section>
-    <hr />
-    <section id="teams">
+    <h1 class="team-title">TEAMS</h1>
+    <section id="team-grid">
+
+      <a href="./outlawthunderjunction.html">
+        <div class="team-card">
+            <img id="otjTeamImage" src="" alt="Slick Shot Showoff">
+            <div class="team-info">
+                <div class="icon-name-container">
+                    <h2>Outlaws at Thunder Junction</h2>
+                </div>
+            </div>
+        </div>
+      </a>
+    
+
+      <a href="./bloomburrow.html" class="team-card-link">
+          <div class="team-card">
+              <img id="blbTeamImage" src="" alt="The Infamous Cruelclaw">
+              <div class="team-info">
+                  <div class="icon-name-container">
+                      <h2>Bloomburrow</h2>
+                  </div>
+              </div>
+          </div>
+      </a>
+
+      <a href="./dominaria.html" class="team-card-link">
+          <div class="team-card">
+              <img id="dmuTeamImage" src="" alt="Sheoldred, the Apocalypse">
+              <div class="team-info">
+                  <div class="icon-name-container">
+                      <h2>Dominaria United</h2>
+                  </div>
+              </div>
+          </div>
+      </a>
+
+      <a href="./duskmourn.html" class="team-card-link">
+          <div class="team-card">
+              <img id="dskTeamImage" src="" alt="Reluctant Role Model">
+              <div class="team-info">
+                  <div class="icon-name-container">
+                      <h2>Duskmourn</h2>
+                  </div>
+              </div>
+          </div>
+      </a>
+
+      <a href="./murders.html" class="team-card-link">
+          <div class="team-card">
+              <img id="mkmTeamImage" src="" alt="Nissa">
+              <div class="team-info">
+                  <div class="icon-name-container">
+                      <h2>Murders at Karlov Manor</h2>
+                  </div>
+              </div>
+          </div>
+      </a>
+  </section>
+    <!-- <section id="teams">
       <h3>Teams</h3>
       <div class="team-container">
         <a href="./anjani.html"><img id="dskIcon" class="set-icon" src="" alt=""/></a>
@@ -142,7 +188,7 @@
         <a href="./chandra.html"><img id="mkmIcon" class="set-icon" src="" alt=""/></a>
         <a href="./nissa.html"><img id="dmuIcon" class="set-icon" src="" alt=""/></a>
       </div>
-    </section>
+    </section> -->
 
     <!-- FOOTER -->
     <footer>

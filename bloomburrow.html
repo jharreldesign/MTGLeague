@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./JS/bloomburrow.js" defer></script>
     <link rel="stylesheet" href="./css/bloomburrow.css" />
+    <link rel="stylesheet" href="./css/global.css" />
     <title>Bloomburrow</title>
-</head>
-<body>
-    <h1>Bloomburrow</h1>
-    <p class="teamInformation">Bloomburrow, a charming pastoral world full of anthropomorphic animals where no human has set foot on the plane. Those who dare to enter are instantly met with the transformation to a creature at random to an animal-shifted body to match its inhabitants. It is assumed that this team inherents abilities to the plane itself, but whether it is a natural magical enchantment, an artifact, mighty spell, a Calamity Beast of plane altering power, or the aftermath of some divine condition is unknown. The animal a visitor becomes is influenced by the native animals of their homeplane.</p>
+  </head>
+  <body>
+    
+    <!-- Navigation Bar -->
+    <nav class="topnav">
+      <div class="logo-title-container">
+        <a href="./index.html" class="logo-title-link">
+          <img
+            class="navlogo"
+            src="./images/MagicLogo.png"
+            alt="Magic The Gathering Logo"
+          />
+          <h1>THE LEAGUE</h1>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="./index.html">HOME</a>
+        <a href="./team.html">TEAMS</a>
+        <a href="./allplaneswalker.html">PLANESWALKER</a>
+      </div>
+    </nav>
 
+    <div class="team-header">
+        <img class="teamLogo" src="" alt="">
+        <h1 class="bloomburrow-title">Bloomburrow</h1>
+    </div>
+
+    <p class="teamInformation">
+      Bloomburrow, a charming pastoral world full of anthropomorphic animals
+      where no human has set foot on the plane. Those who dare to enter are
+      instantly met with the transformation to a creature at random to an
+      animal-shifted body to match its inhabitants. It is assumed that this team
+      inherents abilities to the plane itself, but whether it is a natural
+      magical enchantment, an artifact, mighty spell, a Calamity Beast of plane
+      altering power, or the aftermath of some divine condition is unknown. The
+      animal a visitor becomes is influenced by the native animals of their
+      homeplane.
+    </p>
+    <hr />
     <section>
-    <div id="imageContainer" class="image-container"></div>
+      <div id="imageContainer" class="image-container"></div>
     </section>
-</body>
+  </body>
 </html>

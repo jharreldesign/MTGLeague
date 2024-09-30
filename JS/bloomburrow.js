@@ -1,13 +1,9 @@
-console.log('hello');
-
 const cardImagesContainer = document.querySelector('#imageContainer');
-
+const teamLogo = document.querySelector('.teamLogo')
 const crdImgs = async () => {
     let response = await axios.get('https://api.scryfall.com/cards/search?q=e%3Ablb');
-    console.log(response.data.data);
     
     const imageUris = response.data.data.map(card => card.image_uris.large);
-    console.log(imageUris);
 
     // Shuffle the array of image URIs
     const shuffledUris = imageUris.sort(() => 0.5 - Math.random());
@@ -24,4 +20,13 @@ const crdImgs = async () => {
     });
 };
 
+const setLogo = async () => {
+    let response = await axios.get('https://api.scryfall.com/sets/blb')
+
+    blbLogoImage = response.data.icon_svg_uri;
+
+    teamLogo.setAttribute("src", blbLogoImage)
+}
+
 crdImgs();
+setLogo();

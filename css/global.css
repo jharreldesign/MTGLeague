@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 body {
-    background-color: steelblue;
+    background-color: #282e54;
     margin: 0;
     font-family: 'Roboto', Arial, sans-serif;
 }
 
 .topnav {
-    background-color: #333;
+    background-color: #101112;
     display: flex;
-    justify-content: space-between; 
+    justify-content: start; 
     align-items: center;
     padding: 0px 20px;
 }

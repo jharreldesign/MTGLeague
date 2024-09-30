@@ -68,11 +68,10 @@ const thirdCompanion = async () => {
 
 //-------------INITIAL PAGE LOAD IMAGE---------------------//
 const companionLargeBlock = async () => {
-    let response = await axios.get(`https://api.scryfall.com/cards/search?include_extras=true&include_variations=true&order=set&q=e%3Acmm&unique=prints`);
-    // console.log(response.data.data[83].image_uris)
-    // let largeCompanionImage = response.data.data[83].image_uris.art_crop;
-    // let imageUrl = largeCompanionImage;
-    // largeCompanion.setAttribute("src", imageUrl);
+    let response = await axios.get(`https://api.scryfall.com/cards/51825d35-cdb2-40fa-ab89-1625161b04af`);
+    let largeCompanionImage = response.data.image_uris.art_crop;
+    let imageUrl = largeCompanionImage;
+    largeCompanion.setAttribute("src", imageUrl);
 };
 
 // abilitySmallOne
@@ -94,7 +93,6 @@ const companionTwoSmall = async () => {
 // abilitySmallThree
 const companionThreeSmall = async () => {
     let response = await axios.get(`https://api.scryfall.com/cards/search?order=collector_number&q=e%3Addh`);
-    console.log(response.data.data[4].image_uris.art_crop)
     let smallCompanionImageThree = response.data.data[4].image_uris.art_crop;
     let imageUrl = smallCompanionImageThree;
     companionSmallThree.setAttribute("src", imageUrl);
