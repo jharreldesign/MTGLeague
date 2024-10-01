@@ -1,5 +1,3 @@
-console.log("hello");
-
 const otjLogoContainer = document.querySelector("#otjLogoContainer");
 const dmuImageContainer = document.querySelector("#dmuImageContainer");
 const oneImageContainer = document.querySelector("#oneImageContainer");
