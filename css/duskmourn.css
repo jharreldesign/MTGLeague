@@ -5,9 +5,25 @@ body {
     background-color: #f4f4f4;     
 }
 
-h1 {
-    text-align: center;            
-    color: #333;                 
+.duskmourn-title {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;    
+    font-size: 74px;
+}
+
+.team-header {
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.teamLogo {
+    width: 100px; 
+    height: auto; 
+    filter: brightness(0) invert(1)
 }
 
 .image-container {
@@ -18,17 +34,16 @@ h1 {
 }
 
 .image-container img {
-    width: 100px;
+    width: 350px;
     height: auto;                 
-    margin: 5px;                   
+    margin: 10px; 
     border-radius: 5px;           
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease; 
 }
 
-
 .image-container img:hover {
-    transform: scale(2);         
+    transform: scale(1.3); 
     z-index: 1;                    
 }
 
@@ -37,4 +52,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-size: 30px;
 }

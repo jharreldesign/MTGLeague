@@ -1,6 +1,5 @@
-console.log('hello');
-
 const cardImagesContainer = document.querySelector('#imageContainer');
+const teamLogo = document.querySelector('.teamLogo');
 
 const crdImgs = async () => {
     let response = await axios.get('https://api.scryfall.com/cards/search?q=e%3Amkm');
@@ -24,4 +23,14 @@ const crdImgs = async () => {
     });
 };
 
+const setLogo = async () => {
+    let response = await axios.get('https://api.scryfall.com/sets/mkm')
+
+    mkmLogoImage = response.data.icon_svg_uri;
+
+    teamLogo.setAttribute("src", mkmLogoImage)
+}
+
+
 crdImgs();
+setLogo();

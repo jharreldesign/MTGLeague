@@ -9,7 +9,6 @@ body {
 .topnav {
     background-color: #101112;
     display: flex;
-    justify-content: start; 
     align-items: center;
     padding: 0px 20px;
 }
@@ -19,17 +18,10 @@ body {
     align-items: center;
 }
 
-.logo-title-link {
+.nav-links-container {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    color: white;
-}
-
-.navlogo {
-    height: 100px;
-    width: auto;
-    margin-right: 10px;
+    margin-left: 40px;
 }
 
 .nav-links {
@@ -51,6 +43,65 @@ body {
     color: black;
 }
 
+.navlogo {
+    height: 100px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* ---------SIGN UP/LOGIN---------------------- */
+.topnav {
+    background-color: #101112;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.logo-title-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; 
+}
+
+.avatar-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20p
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.auth-links {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-links a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-links a:hover {
+    background-color: #ddd;
+    color: black;
+}
 
 /* FOOTER */
 .footer {

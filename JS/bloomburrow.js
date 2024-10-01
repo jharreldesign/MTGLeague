@@ -1,5 +1,6 @@
 const cardImagesContainer = document.querySelector('#imageContainer');
-const teamLogo = document.querySelector('.teamLogo')
+const teamLogo = document.querySelector('.teamLogo');
+
 const crdImgs = async () => {
     let response = await axios.get('https://api.scryfall.com/cards/search?q=e%3Ablb');
     

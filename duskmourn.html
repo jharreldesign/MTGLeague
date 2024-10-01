@@ -6,11 +6,41 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./JS/duskmourn.js" defer></script>
     <link rel="stylesheet" href="./css/duskmourn.css" />
+    <link rel="stylesheet" href="./css/global.css" />
     <title>Duskmourn</title>
 </head>
 <body>
-    <h1>Duskmourn</h1>
-    <p class="teamInformation">Below you will recieve your team.</p>
+    <!-- Navigation Bar -->
+    <nav class="topnav">
+        <div class="logo-title-container">
+            <a href="./index.html" class="logo-title-link">
+                <img class="navlogo" src="./images/MagicLogo.png" alt="Magic The Gathering Logo" />
+                <h1>THE LEAGUE</h1>
+            </a>
+        </div>
+        <div class="nav-links-container">
+            <div class="nav-links">
+                <a href="./index.html">HOME</a>
+                <a href="./allplaneswalker.html">PLANESWALKER</a>
+                <a href="./allteams.html">PLANES</a>
+            </div>
+        </div>
+        <div class="avatar-container">
+            <img class="avatar" src="./images/avatar.png" alt="User Avatar" />
+            <div class="auth-links">
+                <a href="./login.html">Login</a>
+                <a href="./signup.html">Signup</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="team-header">
+        <img src="" alt="" class="teamLogo" />
+        <h1 class="duskmourn-title">Duskmourn</h1>
+    </div>
+    <p class="teamInformation">
+        Below you will recieve your team.
+    </p>
 
     <section>
     <div id="imageContainer" class="image-container"></div>

@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./JS/dominaria.js" defer></script>
     <link rel="stylesheet" href="./css/dominaria.css" />
+    <link rel="stylesheet" href="./css/global.css" />
     <title>Dominaria United</title>
-</head>
-<body>
-    <h1>Dominaria United</h1>
-    <p class="teamInformation">The team of Outlaws at Thunder Junction is full of, well, you guessed it ... OUTLAWS AND VILLAINS. These aint no regular outlaws running from the cops. No, these are the most dangerous of them all. Hailing from the Old West, these enemies of the state take the law into their own hands and won't be messed with. Is this your team of choice? You might want to say yes or watch your back.</p>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="topnav">
+      <div class="logo-title-container">
+        <a href="./index.html" class="logo-title-link">
+          <img
+            class="navlogo"
+            src="./images/MagicLogo.png"
+            alt="Magic The Gathering Logo"
+          />
+          <h1>THE LEAGUE</h1>
+        </a>
+      </div>
+      <div class="nav-links-container">
+        <div class="nav-links">
+          <a href="./index.html">HOME</a>
+          <a href="./allplaneswalker.html">PLANESWALKER</a>
+          <a href="./allteams.html">PLANES</a>
+        </div>
+      </div>
+      <div class="avatar-container">
+        <img class="avatar" src="./images/avatar.png" alt="User Avatar" />
+        <div class="auth-links">
+          <a href="./login.html">Login</a>
+          <a href="./signup.html">Signup</a>
+        </div>
+      </div>
+    </nav>
 
+    <div class="team-header">
+      <img src="" alt="" class="teamLogo" />
+      <h1 class="dominaria-title">Dominaria United</h1>
+    </div>
+
+    <p class="teamInformation">
+      The team of Outlaws at Thunder Junction is full of, well, you guessed it
+      ... OUTLAWS AND VILLAINS. These aint no regular outlaws running from the
+      cops. No, these are the most dangerous of them all. Hailing from the Old
+      West, these enemies of the state take the law into their own hands and
+      won't be messed with. Is this your team of choice? You might want to say
+      yes or watch your back.
+    </p>
+    <hr />
     <section>
-    <div id="imageContainer" class="image-container"></div>
+      <div id="imageContainer" class="image-container"></div>
     </section>
-</body>
+  </body>
 </html>
