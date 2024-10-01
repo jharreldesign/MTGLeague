@@ -1,6 +1,12 @@
 const filterButtons = document.querySelectorAll('#filter-bar button');
 const championCards = document.querySelectorAll('.champion-card');
 
+const otjSetLogo = document.querySelector('#otjSetLogo')
+const dmuSetLogo = document.querySelector('#dmuSetLogo')
+const dskSetLogo = document.querySelector('#dskSetLogo')
+const mkmSetLogo = document.querySelector('mkmSetLogo')
+const blbSetLogo = document.querySelector('blbSetLogo')
+
 const manaIconWhite = document.querySelector('#manaIconWhite')
 const manaIconBlue = document.querySelector('#manaIconBlue')
 const manaIconBlack = document.querySelector('#manaIconBlack')
@@ -12,6 +18,48 @@ const heroBlueIcon = document.querySelector('.heroBlueIcon')
 const heroBlackIcon = document.querySelector('.heroBlackIcon')
 const heroRedIcon = document.querySelector('.heroRedIcon')
 const heroGreenIcon = document.querySelector('.heroGreenIcon')
+
+const setLogoBlb = async () => {
+    let response = await axios.get('https://api.scryfall.com/sets/blb')
+
+    blbLogoImage = response.data.icon_svg_uri;
+
+    blbSetLogo.setAttribute("src", blbLogoImage)
+}
+
+const setLogoOtj = async () => {
+    let response = await axios.get('https://api.scryfall.com/sets/otj')
+
+    otjLogoImage = response.data.icon_svg_uri;
+
+    otjSetLogo.setAttribute("src", otjLogoImage)
+}
+
+const setLogoDmu = async () => {
+    let response = await axios.get('https://api.scryfall.com/sets/dmu')
+
+    dmuLogoImage = response.data.icon_svg_uri;
+
+    dmuSetLogo.setAttribute("src", dmuLogoImage)
+}
+
+const setLogoDSK = async () => {
+    let response = await axios.get('https://api.scryfall.com/sets/dsk')
+
+    dskLogoImage = response.data.icon_svg_uri;
+
+    dskSetLogo.setAttribute("src", LogoImage)
+}
+
+const setLogoBlb = async () => {
+    let response = await axios.get('https://api.scryfall.com/sets/blb')
+
+    blbLogoImage = response.data.icon_svg_uri;
+
+    blbSetLogo.setAttribute("src", blbLogoImage)
+}
+
+
 
 const symbolWhite = async () => {
     let response = await axios.get(`https://api.scryfall.com/symbology`);
