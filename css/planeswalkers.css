@@ -1,175 +1,235 @@
 /* Global Styles */
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #001f3f;
-  }
-  
-  /* Hero Image */
-  .planeswalker-hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/anjani.png");
-    height: 80vh; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .planeswalker-hero-text {
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .mana-container {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .manaSymbol {
-    height: 50px;
-    width: 50px;
-    margin-right: 8px;
-  }
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #001f3f;
+}
 
-  .planeswalker-name {
-    font-size: 90px;
-  }
+/* Hero Image */
+.planeswalker-hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/anjani.png");
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .planes-controlled {
-    font-size: 55px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px 10px;
-  }
+.planeswalker-hero-text {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .manaSymbol {
-    height: 100px;
-    width: 200px;
-    padding-top: 0;
-    padding-bottom: 50px;
-  }
+.planeswalker-name {
+  font-size: 90px;
+  margin-bottom: 0;
+}
 
-  .planeswalker-tagline {
-    font-size: 35px;
-  }
+.mana-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  height: 140px;
+  width: 140px;
+}
 
-  .planeswalker-description {
-    font-size: 25px;
-  }
-  
-  /* --------Plains Controlled-------------- */
-  #planes-controlled {
-    background-color: steelblue;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 170px;
-  }
-  
-  #planes-controlled img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-  }  
-  
-  /* ------COMPANIONS SECTION---------- */
-  #companions {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  #companions h2 {
-    margin-bottom: 60px;
-    color: white;
-    font-size: 60px;
-  }
-  
-  .companions-container {
-    display: flex;
-    justify-content: center;
-    gap: 200px; 
-  }
-  
-  .companion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .companion span {
-    font-size: 18px;
-    color: white;
-    margin-bottom: 10px;
-  }
-  
-  .companion img {
-    height: 350px; 
-    width: auto;
-    border-radius: 8px;
-    border: 2px solid white;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  /*------- Abilities Section -----------*/
-  #abilities {
-    background-color: #001f3f;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
-  #abilities h2 {
-    margin-bottom: 60px;
-    color: white;
-    font-size: 60px;
-  }
-  
-  /* Centering container */
-  .abilities-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Styling the large window box */
-  .large-window {
-    width: 1500px;
-    height: 800px;
-    border: 3px solid skyblue;
-    background-color: #001f3f;
-    margin-bottom: 20px;
-  }
-  
-  .large-window img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    border-radius: 10px;
-  }
-  
-  /* Styling the smaller images */
-  .abilities-images {
-    display: flex;
-    justify-content: center;
-    gap: 75px;
-  }
-  
-  .abilities-images img {
-    width: 300px;
-    height: 200px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    border-radius: 8px;
-    border: 2px solid white; 
-  }
+.mana-symbol {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  padding: 0;
+}
+
+.planeswalker-tagline {
+  font-size: 35px;
+}
+
+.planeswalker-description {
+  font-size: 25px;
+}
+
+/* ------------PLANES------------ */
+.planes-controlled {
+  font-size: 40px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* margin: 10px 10px; */
+}
+
+#planes-controlled-icons {
+  background-color: steelblue;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+#planes-controlled img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* ------COMPANIONS SECTION---------- */
+#companions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#companions h2 {
+  margin-bottom: 60px;
+  color: white;
+  font-size: 60px;
+}
+
+.companions-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.companion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.companion span {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.companion img {
+  height: 350px;
+  width: auto;
+  border-radius: 8px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/*------- Abilities Section -----------*/
+#abilities {
+  background-color: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#abilities h2 {
+  margin-bottom: 60px;
+  color: white;
+  font-size: 60px;
+}
+
+/* Centering container */
+.abilities-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling the large window box */
+.large-window {
+  width: 1500px;
+  height: 800px;
+  border: 3px solid skyblue;
+  background-color: #001f3f;
+  margin-bottom: 20px;
+}
+
+.large-window img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+}
+
+/* Styling the smaller images */
+.abilities-images {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+}
+
+.abilities-images img {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+
+/* -------------------------PLANES CARD-------------------------- */
+.plane-card-link {
+  text-decoration: none;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.plane-card {
+  position: relative;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  background-color: #fff;
+}
+
+.plane-image-container {
+  position: relative;
+}
+
+.plane-image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.plane-card:hover .overlay {
+  opacity: 1;
+}
+
+.icon-name-container {
+  text-align: center;
+}
+
+.card-icon {
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.plane-name {
+  font-size: 1.2rem;
+  margin: 0;
+}
