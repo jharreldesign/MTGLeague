@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./JS/ajani.js" defer></script>
-    <script src="./JS/axios/setlogo.js" defer></script>
     <script src="./JS/axios/planeswalker.js" defer></script>
     <script src="./JS/axios/manacolor.js" defer></script>
-    <!-- <link rel="stylesheet" href="./css/ajani.css" /> -->
+
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/planeswalkers.css" />
     <title>Anjani Goldmane</title>
@@ -18,18 +17,14 @@
     <nav class="topnav">
       <div class="logo-title-container">
         <a href="./index.html" class="logo-title-link">
-          <img
-            class="navlogo"
-            src="./images/MagicLogo.png"
-            alt="Magic The Gathering Logo"
-          />
+          <img class="navlogo" src="./images/MagicLogo.png" alt="Magic The Gathering Logo" />
           <h1>THE LEAGUE</h1>
         </a>
       </div>
       <div class="nav-links-container">
         <div class="nav-links">
           <a href="./index.html">HOME</a>
-          <a href="./allplaneswalker.html">PLANESWALKER</a>
+          <a href="./allplaneswalker.html" class="dropdown-toggle">PLANESWALKER</a>
           <a href="./allteams.html">PLANES</a>
         </div>
       </div>
@@ -43,27 +38,22 @@
     </nav>
 
     <div class="planeswalker-hero-image">
+      <img src="../images/anjani.png" alt="Ajani Goldmane" class="hero-background-image">
       <div class="planeswalker-hero-text">
-        <h1 class="planeswalker-name">AJANI GOLDMANE</h1>
-
         <div class="mana-container">
-          <img class="mana-symbol" id="manaSymbol" src="" alt="Mana Symbol" />
+          <img class="mana-symbol" id="teamWhiteMana1" src="" alt="Mana Symbol" />
         </div>
-
+        <h1 class="planeswalker-name">AJANI GOLDMANE</h1>
         <div>
           <h3 class="planeswalker-tagline">
             Duty, honor, and valor are either in your heart or they are not. You
             will never know for certain until you are tested
           </h3>
-
           <p class="planeswalker-description">
-            Ajani is a leonin warrior who aids his allies with potent healing
-            and protective powers. Known across the Multiverse as a noble hero
-            and compassionate friend, Ajani devotes himself to protecting the
-            weak and fighting against those who seek to oppress others. As a
-            member of the Gatewatch, Ajani often provides mentorship to his
-            fellow Planeswalkers, seeking to help them master their gifts and
-            grow into their best selves.
+            Ajani is a leonin warrior who aids his allies with potent healing and
+            protective powers. Known across the Multiverse as a noble hero and
+            compassionate friend, Ajani devotes himself to protecting the weak and
+            fighting against those who seek to oppress others.
           </p>
         </div>
       </div>
@@ -75,25 +65,19 @@
         <div class="plane-card">
           <div class="plane-image-container">
             <img
+              id="dskLogoContainer"
               class="plane-image"
               src="./images/all-teams-images/outlaws.jpg"
               alt="Outlaws of Thunder Junction"
             />
             <div class="overlay">
               <div class="icon-name-container">
-                <img
-                  id="cardSetIconOtj"
-                  class="card-icon"
-                  src=""
-                  alt="Outlaws of Thunder Junction Icon"
-                />
                 <h2 class="plane-name">Outlaws of Thunder Junction</h2>
               </div>
             </div>
           </div>
         </div>
       </a>
-
       <a href="./duskmourn.html" class="plane-card-link">
         <div class="plane-card">
           <div class="plane-image-container">
@@ -104,19 +88,12 @@
             />
             <div class="overlay">
               <div class="icon-name-container">
-                <img
-                  id="cardSetIconOtj"
-                  class="card-icon"
-                  src=""
-                  alt="Duskmourn"
-                />
                 <h2 class="plane-name">Duskmourn</h2>
               </div>
             </div>
           </div>
         </div>
       </a>
-
       <a href="./dominaria.html" class="plane-card-link">
         <div class="plane-card">
           <div class="plane-image-container">
@@ -127,12 +104,6 @@
             />
             <div class="overlay">
               <div class="icon-name-container">
-                <img
-                  id="cardSetIconOtj"
-                  class="card-icon"
-                  src=""
-                  alt="Dominaria United"
-                />
                 <h2 class="plane-name">Dominaria United</h2>
               </div>
             </div>
@@ -141,21 +112,16 @@
       </a>
     </section>
 
-    <!-- -----------PLANES CONTROLLED------------ -->
-
     <section id="companions">
       <h2 class="companions-title">COMPANIONS</h2>
       <div class="companions-container">
         <div class="companion">
-          <span>Kaya Cassir</span>
           <img id="blbCompanionOne" src="" alt="Niv-Mizzet" />
         </div>
         <div class="companion">
-          <span>Elspeth Tirel</span>
           <img id="dskCompanionOne" src="" alt="Ral Zarek" />
         </div>
         <div class="companion">
-          <span>Vraska</span>
           <img id="otjCompanionOne" src="" alt="Gideon Jura" />
         </div>
       </div>

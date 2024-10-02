@@ -5,14 +5,7 @@ body {
     background-color: steelblue;     
 }
 
-.outlaws-title {
-    text-align: center;
-    color: white;
-    text-transform: uppercase;    
-    font-size: 74px;
-}
-
-.team-header {
+.set-header {
     display: flex;    
     align-items: center;
     justify-content: center;
@@ -20,10 +13,25 @@ body {
     text-align: center;
 }
 
-.teamLogo {
-    width: 100px; 
-    height: auto; 
-    filter: brightness(0) invert(1)
+.set-header img {
+    height: 100px;
+    filter: brightness(0) invert(1);
+}
+
+.set-title {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;    
+    font-size: 74px;
+}
+
+.set-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
 }
 
 .image-container {
@@ -42,21 +50,7 @@ body {
     transition: transform 0.3s ease; 
 }
 
-.team-header img {
-    height: 70px;
-    filter: brightness(0) invert(1);
-}
-
 .image-container img:hover {
     transform: scale(1.3); 
     z-index: 1;                    
-}
-
-.teamInformation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 30px;
 }

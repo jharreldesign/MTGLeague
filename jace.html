@@ -3,87 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./JS/jace.js" defer></script>
-    <link rel="stylesheet" href="./css/jace.css" />
+    <script src="./JS/axios/planeswalker.js" defer></script>
+    <script src="./JS/axios/manacolor.js" defer></script>
+
     <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/planeswalkers.css" />
     <title>Jace Beleren</title>
   </head>
   <body>
     <!-- Navigation Bar -->
     <nav class="topnav">
-        <div class="logo-title-container">
-            <a href="./index.html" class="logo-title-link">
-                <img class="navlogo" src="./images/MagicLogo.png" alt="Magic The Gathering Logo" />
-                <h1>THE LEAGUE</h1>
-            </a>
+      <div class="logo-title-container">
+        <a href="./index.html" class="logo-title-link">
+          <img
+            class="navlogo"
+            src="./images/MagicLogo.png"
+            alt="Magic The Gathering Logo"
+          />
+          <h1>THE LEAGUE</h1>
+        </a>
+      </div>
+      <div class="nav-links-container">
+        <div class="nav-links">
+          <a href="./index.html">HOME</a>
+          <a href="./allplaneswalker.html">PLANESWALKER</a>
+          <a href="./allteams.html">PLANES</a>
         </div>
-        <div class="nav-links-container">
-            <div class="nav-links">
-                <a href="./index.html">HOME</a>
-                <a href="./allplaneswalker.html">PLANESWALKER</a>
-                <a href="./allteams.html">PLANES</a>
-            </div>
+      </div>
+      <div class="avatar-container">
+        <img class="avatar" src="./images/avatar.png" alt="User Avatar" />
+        <div class="auth-links">
+          <a href="./login.html">Login</a>
+          <a href="./signup.html">Signup</a>
         </div>
-        <div class="avatar-container">
-            <img class="avatar" src="./images/avatar.png" alt="User Avatar" />
-            <div class="auth-links">
-                <a href="./login.html">Login</a>
-                <a href="./signup.html">Signup</a>
-            </div>
-        </div>
+      </div>
     </nav>
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1 style="font-size: 50px">JACE BELEREN</h1>
-            <div class="mana-container">
-                <img class="manaSymbol" id="manaSymbol" src="" alt="Mana Symbol">
-            </div>
-            <div>
-                <h3>It's good to learn from your failures, but I prefer to learn from the failures of others.</h3>
-                <p class="jaceDescription">Jace Beleren may be the most talented mind mage in the Multiverse. Able to read thoughts, erase memories, induce sleep, and immerse others within illusions, he is a strategic genius of exceptional intelligence and insatiable curiosity. For many years, Jace had no memory of his childhood. Although those memories are now restored, the search to discover his past left him with a fascination for mysteries and puzzles. It also made him cautious, guarded, and at times frustratingly cerebral. Jace could easily read the true intentions of those around him, but he recognizes that doing so would erode the trust of his friends and rob him of the genuine connection he desires.</p>
-            </div>
-        </div>
-    </div>
 
-    <h3>Plains Controlled</h3>
-    <section id="plainsControlled">
-        <img id="otjLogoContainer" alt="OTJ Logo" width="100" height="100">
-        <img id="dmuImageContainer" alt="DMU Logo" width="100" height="100">
-        <img id="oneImageContainer" alt="ONE Logo" width="100" height="100">
+    <div class="planeswalker-hero-image">
+        <img src="../images/jace.png" alt="Jace Beleren" class="hero-background-image">
+        <div class="planeswalker-hero-text">
+          <div class="mana-container">
+            <img class="mana-symbol" id="teamBlueMana1" src="" alt="Mana Symbol" />
+          </div>
+          <h1 class="planeswalker-name">JACE BELEREN</h1>
+          <div>
+            <h3 class="planeswalker-tagline">
+                It's good to learn from your failures, but I prefer to learn from the failures of others
+            </h3>
+            <p class="planeswalker-description">
+                Jace Beleren may be the most talented mind mage in the Multiverse. Able to read thoughts, erase memories, induce sleep, and immerse others within illusions, he is a strategic genius of exceptional intelligence and insatiable curiosity. For many years, Jace had no memory of his childhood. Although those memories are now restored, the search to discover his past left him with a fascination for mysteries and puzzles. It also made him cautious, guarded, and at times frustratingly cerebral. Jace could easily read the true intentions of those around him, but he recognizes that doing so would erode the trust of his friends and rob him of the genuine connection he desires.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <section id="planes-controlled-icons">
+      <h3 class="planes-controlled">PLANES CONTROLLED</h3>
+
+      <a href="./bloomburrow.html">
+        <div class="plane-card">
+          <div class="plane-image-container">
+            <img
+              id="dskLogoContainer"
+              class="plane-image"
+              src="./images/all-teams-images/bloomburrow.jpg"
+              alt="bloomburrow"
+            />
+            <div class="overlay">
+              <div class="icon-name-container">
+                <h2 class="plane-name">Bloomburrow</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="./dominaria.html" class="plane-card-link">
+        <div class="plane-card">
+          <div class="plane-image-container">
+            <img
+              class="plane-image"
+              src="./images/all-teams-images/dominaria-united.jpg"
+              alt="Dominaria United"
+            />
+            <div class="overlay">
+              <div class="icon-name-container">
+                <h2 class="plane-name">Dominaria United</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="./murders.html" class="plane-card-link">
+        <div class="plane-card">
+          <div class="plane-image-container">
+            <img
+              class="plane-image"
+              src="./images/all-teams-images/murders-karlov.jpg"
+              alt="Murders at Karlov Manaor"
+            />
+            <div class="overlay">
+              <div class="icon-name-container">
+                <h2 class="plane-name">Murders at Karlov Manor</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
     </section>
 
+    <!-- -----------PLANES CONTROLLED------------ -->
+
     <section id="companions">
-        <h3>Companions</h3>
-        <div class="companions-container">
-            <div class="companion">
-                <span>Niv-Mizzet</span>
-                <img id="companionOne" src="path/to/image1.jpg" alt="Niv-Mizzet">
-            </div>
-            <div class="companion">
-                <span>Ral Zarek</span>
-                <img id="companionTwo" src="path/to/image2.jpg" alt="Ral Zarek">
-            </div>
-            <div class="companion">
-                <span>Gideon Jura</span>
-                <img id="companionThree" src="path/to/image3.jpg" alt="Gideon Jura">
-            </div>
+      <h2 class="companions-title">COMPANIONS</h2>
+
+      <div class="companions-container">
+        <div class="companion">
+          <img id="blbCompanionOne" src="" alt="Niv-Mizzet" />
         </div>
+        <div class="companion">
+          <img id="dskCompanionOne" src="" alt="Ral Zarek" />
+        </div>
+        <div class="companion">
+          <img id="otjCompanionOne" src="" alt="Gideon Jura" />
+        </div>
+      </div>
+
     </section>
 
     <section id="abilities">
-        <h3>ABILITIES</h3>
-        <div class="abilities-container">
-            <div class="large-window">
-                <img id="largeCompanion" src="" alt="Large Companion Image" />
-            </div>
-            <div class="abilities-images">
-                <img id="companionSmallOne" src="path/to/ability1.jpg" alt="Ability 1" />
-                <img id="companionSmallTwo" src="path/to/ability2.jpg" alt="Ability 2" />
-                <img id="companionSmallThree" src="path/to/ability3.jpg" alt="Ability 3" />
-            </div>
+      <h2>ABILITIES</h2>
+      <div class="abilities-container">
+        <div class="large-window">
+          <img
+            id="largeCompanion"
+            src="/images/mtg-colors-wheel.jpg"
+            alt="Large Companion Image"
+          />
         </div>
+        <div class="abilities-images">
+          <img id="dmuAbilityImage" src="" alt="Ability 1" />
+          <img id="mkmAbilityImage" src="" alt="Ability 2" />
+        </div>
+      </div>
     </section>
-    
   </body>
 </html>

@@ -9,16 +9,23 @@ html {
 
 /* Hero Image */
 .planeswalker-hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/anjani.png");
-  height: 80vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.hero-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(50%); /* Darken the image to match the gradient effect */
 }
 
 .planeswalker-hero-text {
@@ -27,6 +34,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .planeswalker-name {
@@ -54,7 +63,7 @@ html {
 }
 
 .planeswalker-description {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 /* ------------PLANES------------ */
@@ -134,14 +143,12 @@ html {
   font-size: 60px;
 }
 
-/* Centering container */
 .abilities-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Styling the large window box */
 .large-window {
   width: 1500px;
   height: 800px;
@@ -157,7 +164,6 @@ html {
   border-radius: 10px;
 }
 
-/* Styling the smaller images */
 .abilities-images {
   display: flex;
   justify-content: center;
@@ -196,7 +202,8 @@ html {
 
 .plane-image {
   width: 100%;
-  height: auto;
+  height: 200px;
+  object-fit: fill;
 }
 
 .overlay {
@@ -205,31 +212,47 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5); 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease;
 }
 
 .plane-card:hover .overlay {
   opacity: 1;
 }
 
+.plane-card-link {
+  text-decoration: none;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.plane-card {
+  position: relative;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  background-color: #fff;
+}
+
 .icon-name-container {
   text-align: center;
 }
 
-.card-icon {
-  width: 40px;
-  height: auto;
-  margin-bottom: 10px;
+.plane-name {
+  font-size: 1.5rem;
+  margin: 0;
 }
 
-.plane-name {
-  font-size: 1.2rem;
-  margin: 0;
+.card-icon {
+  width: 50px; 
+  height: auto;
+  margin-bottom: 10px;
 }

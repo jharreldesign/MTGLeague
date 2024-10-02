@@ -1,4 +1,5 @@
 const dskLogoContainer = document.querySelector('#dskLogoContainer');
+
 const blbLogoContainer = document.querySelector('#blbLogoContainer');
 const mkmLogoContainer = document.querySelector('#mkmLogoContainer');
 const otjLogoContainer = document.querySelector('#otjLogoContainer');
@@ -6,7 +7,7 @@ const dmuLogoContainer = document.querySelector('#dmuLogoContainer');
 
 // TEAMS
 
-const teamDSK = async () => {
+const dskIcon = async () => {
     let response = await axios.get(`https://api.scryfall.com/sets/dsk`);
     let logoDSK = response.data.icon_svg_uri;
     dskLogoContainer.setAttribute("src", logoDSK);
@@ -35,6 +36,8 @@ const teamDMU = async () => {
     let logoDMU = response.data.icon_svg_uri;
     dmuLogoContainer.setAttribute("src", logoDMU);
 }
+
+dskIcon();
 
 teamWhiteLogo();
 teamBlueLogo();

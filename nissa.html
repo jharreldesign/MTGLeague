@@ -1,89 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./JS/nissa.js" defer></script>
-    <link rel="stylesheet" href="./css/nissa.css" />
+    <script src="./JS/axios/planeswalker.js" defer></script>
+    <script src="./JS/axios/manacolor.js" defer></script>
+
     <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/planeswalkers.css" />
     <title>Nissa Revane</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navigation Bar -->
     <nav class="topnav">
-        <div class="logo-title-container">
-            <a href="./index.html" class="logo-title-link">
-                <img class="navlogo" src="./images/MagicLogo.png" alt="Magic The Gathering Logo" />
-                <h1>THE LEAGUE</h1>
-            </a>
+      <div class="logo-title-container">
+        <a href="./index.html" class="logo-title-link">
+          <img
+            class="navlogo"
+            src="./images/MagicLogo.png"
+            alt="Magic The Gathering Logo"
+          />
+          <h1>THE LEAGUE</h1>
+        </a>
+      </div>
+      <div class="nav-links-container">
+        <div class="nav-links">
+          <a href="./index.html">HOME</a>
+          <a href="./allplaneswalker.html">PLANESWALKER</a>
+          <a href="./allteams.html">PLANES</a>
         </div>
-        <div class="nav-links-container">
-            <div class="nav-links">
-                <a href="./index.html">HOME</a>
-                <a href="./allplaneswalker.html">PLANESWALKER</a>
-                <a href="./allteams.html">PLANES</a>
-            </div>
+      </div>
+      <div class="avatar-container">
+        <img class="avatar" src="./images/avatar.png" alt="User Avatar" />
+        <div class="auth-links">
+          <a href="./login.html">Login</a>
+          <a href="./signup.html">Signup</a>
         </div>
-        <div class="avatar-container">
-            <img class="avatar" src="./images/avatar.png" alt="User Avatar" />
-            <div class="auth-links">
-                <a href="./login.html">Login</a>
-                <a href="./signup.html">Signup</a>
-            </div>
-        </div>
+      </div>
     </nav>
-    <div class="nissa-hero-image">
-        <div class="nissa-hero-text">
-            <h1 style="font-size: 50px">NISSA REVANE</h1>
-            <div class="mana-container">
-                <img class="manaSymbol" id="manaSymbol" src="" alt="Mana Symbol">
-            </div>
-            <div>
-                <h3>Life grows everywhere. My kin merely find those places where it grows strongest</h3>
-                <p class="jaceDescription">Nissa Revane is a powerful elven animist capable of awakening the land itself to fight at her side. Her innate connection to the primal magic of the Multiverse gives her profound respect for all life and the systems that support it. Despite her kind and soft-spoken demeanor, she fights both fiercely and relentlessly to defend the natural world wherever it is threatened.
-                </p>
-            </div>
-        </div>
-    </div>
 
-    <h3>Plains Controlled</h3>
-    <section id="plainsControlled">
-        <img id="otjLogoContainer" alt="OTJ Logo" width="100" height="100">
-        <img id="dmuImageContainer" alt="DMU Logo" width="100" height="100">
-        <img id="oneImageContainer" alt="ONE Logo" width="100" height="100">
+    <div class="planeswalker-hero-image">
+        <img src="../images/Nissa.png" alt="Nissa Revane" class="hero-background-image">
+        <div class="planeswalker-hero-text">
+          <div class="mana-container">
+            <img class="mana-symbol" id="teamGreenMana1" src="" alt="Mana Symbol" />
+          </div>
+          <h1 class="planeswalker-name">NISSA REVANE</h1>
+          <div>
+            <h3 class="planeswalker-tagline">
+                Life grows everywhere. My kin merely find those places where it grows strongest
+            </h3>
+            <p class="planeswalker-description">
+                Nissa Revane is a powerful elven animist capable of awakening the land itself to fight at her side. Her innate connection to the primal magic of the Multiverse gives her profound respect for all life and the systems that support it. Despite her kind and soft-spoken demeanor, she fights both fiercely and relentlessly to defend the natural world wherever it is threatened.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <section id="planes-controlled-icons">
+      <h3 class="planes-controlled">PLANES CONTROLLED</h3>
+
+      <a href="./bloomburrow.html">
+        <div class="plane-card">
+          <div class="plane-image-container">
+            <img
+              id="dskLogoContainer"
+              class="plane-image"
+              src="./images/all-teams-images/bloomburrow.jpg"
+              alt="bloomburrow"
+            />
+            <div class="overlay">
+              <div class="icon-name-container">
+                <h2 class="plane-name">Bloomburrow</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="./outlawthunderjunction.html" class="plane-card-link">
+        <div class="plane-card">
+          <div class="plane-image-container">
+            <img
+              class="plane-image"
+              src="./images/all-teams-images/outlaws.jpg"
+              alt="Outlaws of Thunder Junction"
+            />
+            <div class="overlay">
+              <div class="icon-name-container">
+                <h2 class="plane-name">Outlaws of Thunder Junction</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="./murders.html" class="plane-card-link">
+        <div class="plane-card">
+          <div class="plane-image-container">
+            <img
+              class="plane-image"
+              src="./images/all-teams-images/murders-karlov.jpg"
+              alt="Murders at Karlov Manaor"
+            />
+            <div class="overlay">
+              <div class="icon-name-container">
+                <h2 class="plane-name">Murders at Karlov Manor</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
     </section>
 
+    <!-- -----------PLANES CONTROLLED------------ -->
+
     <section id="companions">
-        <h3>Companions</h3>
-        <div class="companions-container">
-            <div class="companion">
-                <span>Angrath</span>
-                <img id="companionOne" src="" alt="Niv-Mizzet">
-            </div>
-            <div class="companion">
-                <span>Kiora</span>
-                <img id="companionTwo" src="" alt="Ral Zarek">
-            </div>
-            <div class="companion">
-                <span>Teferi</span>
-                <img id="companionThree" src="" alt="Gideon Jura">
-            </div>
+      <h2 class="companions-title">COMPANIONS</h2>
+
+      <div class="companions-container">
+        <div class="companion">
+          <img id="blbCompanionOne" src="" alt="Niv-Mizzet" />
         </div>
+        <div class="companion">
+          <img id="dskCompanionOne" src="" alt="Ral Zarek" />
+        </div>
+        <div class="companion">
+          <img id="otjCompanionOne" src="" alt="Gideon Jura" />
+        </div>
+      </div>
+
     </section>
 
     <section id="abilities">
-        <h3>ABILITIES</h3>
-        <div class="abilities-container">
-            <div class="large-window">
-                <img id="largeCompanion" src="" alt="Large Companion Image" />
-            </div>
-            <div class="abilities-images">
-                <img id="companionSmallOne" src="" alt="Ability 1" />
-                <img id="companionSmallTwo" src="" alt="Ability 2" />
-                <img id="companionSmallThree" src="" alt="Ability 3" />
-            </div>
+      <h2>ABILITIES</h2>
+      <div class="abilities-container">
+        <div class="large-window">
+          <img
+            id="largeCompanion"
+            src="/images/mtg-colors-wheel.jpg"
+            alt="Large Companion Image"
+          />
         </div>
+        <div class="abilities-images">
+          <img id="dmuAbilityImage" src="" alt="Ability 1" />
+          <img id="mkmAbilityImage" src="" alt="Ability 2" />
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>

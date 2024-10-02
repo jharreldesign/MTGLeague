@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="./css/allplaneswalker.css" />
+    <script src="./JS/axios/planeswalker.js" defer></script>
+    <script src="./JS/axios/manacolor.js" defer></script>
+
     <link rel="stylesheet" href="./css/global.css" />
-    <script defer src="./JS/allplaneswalker.js"></script>
-    <title>Planeswalker</title>
-</head>
+    <link rel="stylesheet" href="./css/planeswalkers.css" />
+    <link rel="stylesheet" href="./css/allplaneswalker.css" />
+    <title>Planeswalkers</title>
+  </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="topnav">
@@ -39,22 +43,22 @@
         <h1>Planeswalkers</h1>
         <p class="hero-description">Planeswalkers are the most powerful beings in all of the Magic: The Gathering world. This is a collection of five of the most powerful Planeswalkers.</p>
         <div class="hero-icons-container">
-            <img id="manaWhiteHero" class="heroWhiteIcon" src="" alt="">
-            <img id="manaBlueHero" class="heroBlueIcon" src="" alt="">
-            <img id="manaBlackHero" class="heroBlackIcon" src="" alt="">
-            <img id="manaRedHero" class="heroRedIcon" src="" alt="">
-            <img id="manaGreenHero" class="heroGreenIcon" src="" alt="">
+            <img id="teamWhiteMana1" class="mana-header" src="" alt="White Mana Icon">
+            <img id="teamBlueMana1" class="mana-header" src="" alt="White Mana Icon">
+            <img id="teamBlackMana1" class="mana-header" src="" alt="White Mana Icon">
+            <img id="teamRedMana1" class="mana-header" src="" alt="White Mana Icon">
+            <img id="teamGreenMana1" class="mana-header" src="" alt="White Mana Icon">
         </div>
     </section>
 
     <!-- Planeswalkers Grid -->
     <section id="planeswalker-grid">
-        <a href="./anjani.html" class="planeswalker-card-link">
+        <a href="./ajani.html" class="planeswalker-card-link">
             <div class="planeswalker-card">
                 <img src="./images/anjani.png" alt="Anjani">
                 <div class="planeswalker-info">
                     <div class="icon-name-container">
-                        <img id="manaIconWhite" src="" alt="White Mana Icon">
+                        <img id="teamWhiteMana2" class="mana" src="" alt="White Mana Icon">
                         <h2>Anjani</h2>
                     </div>
                 </div>
@@ -66,7 +70,7 @@
                 <img src="./images/jace.png" alt="Jace">
                 <div class="planeswalker-info">
                     <div class="icon-name-container">
-                        <img id="manaIconBlue" src="" alt="Blue Mana Icon">
+                        <img id="teamBlueMana2" class="mana" src="" alt="Blue Mana Icon">
                         <h2>Jace</h2>
                     </div>
                 </div>
@@ -78,7 +82,7 @@
                 <img src="./images/liliana.png" alt="Liliana">
                 <div class="planeswalker-info">
                     <div class="icon-name-container">
-                        <img id="manaIconBlack" src="" alt="Black Mana Icon">
+                        <img id="teamBlackMana2" class="mana" src="" alt="Black Mana Icon">
                         <h2>Liliana</h2>
                     </div>
                 </div>
@@ -90,7 +94,7 @@
                 <img src="./images/chandra.png" alt="Chandra">
                 <div class="planeswalker-info">
                     <div class="icon-name-container">
-                        <img id="manaIconRed" src="" alt="Red Mana Icon">
+                        <img id="teamRedMana2" class="mana" src="" alt="Red Mana Icon">
                         <h2>Chandra</h2>
                     </div>
                 </div>
@@ -102,7 +106,7 @@
                 <img src="./images/nissa.png" alt="Nissa">
                 <div class="planeswalker-info">
                     <div class="icon-name-container">
-                        <img id="manaIconGreen" src="" alt="Green Mana Icon">
+                        <img id="teamGreenMana2" class="mana" src="" alt="Green Mana Icon">
                         <h2>Nissa</h2>
                     </div>
                 </div>
