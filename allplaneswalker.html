@@ -14,31 +14,51 @@
     <title>Planeswalkers</title>
   </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="topnav">
-        <div class="logo-title-container">
-            <a href="./index.html" class="logo-title-link">
-                <img class="navlogo" src="./images/MagicLogo.png" alt="Magic The Gathering Logo" />
-                <h1>THE LEAGUE</h1>
-            </a>
-        </div>
-        <div class="nav-links-container">
-            <div class="nav-links">
-                <a href="./index.html">HOME</a>
-                <a href="./allplaneswalker.html">PLANESWALKER</a>
-                <a href="./allteams.html">PLANES</a>
-            </div>
-        </div>
-        <div class="avatar-container">
-            <img class="avatar" src="./images/avatar.png" alt="User Avatar" />
-            <div class="auth-links">
-                <a href="./login.html">Login</a>
-                <a href="./signup.html">Signup</a>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="./images/magic-logo-white.png" class="mtg-logo" alt="Magic The Gathering Logo">
+        <p>| THE LEAGUE</p>
+    </div>
+
+    <ul class="nav-links">
+
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <div class="menu">
+
+        <li><a href="./index.html">HOME</a></li>
+
+        <li class="services">
+          <a href="./allplaneswalker.html">PLANESWALKERS</a>
+
+          <ul class="dropdown">
+            <li><a href="./ajani.html">Ajani</a></li>
+            <li><a href="./chandra.html">Chandra</a></li>
+            <li><a href="./jace.html">Jace</a></li>
+            <li><a href="./liliana.html">Liliana</a></li>
+            <li><a href="./nissa.html">Nissa</a></li>
+          </ul>
+
+        </li>
+
+        <li class="services">
+            <a href="./allplaneswalker.html">PLANES</a>
+  
+            <ul class="dropdown">
+                <li><a href="./bloomburrow.html">Bloomburrow</a></li>
+                <li><a href="./dominaria.html">Dominaria United</a></li>
+                <li><a href="./duskmourn.html">Duskmourn</a></li>
+                <li><a href="./murders.html">Murders at Karlov Manor</a></li>
+              <li><a href="./outlawthunderjunction.html">Outlaws of Thunder Junction</a></li>
+            </ul>
+  
+          </li>
+      </div>
+    </ul>
+  </nav>
+
     <section id="hero">
         <h1>Planeswalkers</h1>
         <p class="hero-description">Planeswalkers are the most powerful beings in all of the Magic: The Gathering world. This is a collection of five of the most powerful Planeswalkers.</p>
@@ -51,7 +71,6 @@
         </div>
     </section>
 
-    <!-- Planeswalkers Grid -->
     <section id="planeswalker-grid">
         <a href="./ajani.html" class="planeswalker-card-link">
             <div class="planeswalker-card">
@@ -113,11 +132,6 @@
             </div>
         </a>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <img class="footer-logo" src="./images/MagicLogo.png" alt="">
-    </footer>
 
 </body>
 </html>

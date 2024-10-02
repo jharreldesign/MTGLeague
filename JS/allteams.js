@@ -1,6 +1,3 @@
-const filterButtons = document.querySelectorAll('#filter-bar button');
-const championCards = document.querySelectorAll('.champion-card');
-
 const otjSetLogo = document.querySelector('#otjSetLogo')
 const dmuSetLogo = document.querySelector('#dmuSetLogo')
 const dskSetLogo = document.querySelector('#dskSetLogo')

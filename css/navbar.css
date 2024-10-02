@@ -3,14 +3,16 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #282e54;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: #282e54;
     color: #fff;
     position: fixed;
     left: 0;
@@ -45,7 +47,7 @@ html, body {
     align-items: center;
     list-style: none;
     margin: 0;
-    padding-right: 40px;
+    padding: 0;
 }
 
 .nav-links .menu {
@@ -58,10 +60,6 @@ html, body {
     text-decoration: none;
     padding: 10px 15px;
     transition: background-color 0.3s ease;
-}
-
-.nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .hamburger {
@@ -77,71 +75,64 @@ input[type="checkbox"] {
 .dropdown {
     display: none;
     position: absolute;
-    background-color: black; 
+    background-color: black;
     list-style: none;
-    padding: 15px; 
+    padding: 15px;
     z-index: 1000;
     border-radius: 5px;
 }
 
 .dropdown li {
-    margin: 10px 0; 
+    margin: 10px 0;
 }
 
 .dropdown a {
-    color: white; 
-    padding: 10px 15px; 
-    display: block; 
+    color: white;
+    padding: 10px 15px;
+    display: block;
     transition: background-color 0.3s ease;
 }
 
 .dropdown a:hover {
-    background-color: rgba(255, 255, 255, 0.2); 
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .services:hover .dropdown {
     display: block;
 }
 
-.main-content {
-    margin-top: 70px;
-    padding: 20px; 
-    color: #fff; 
-}
-  
 .footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
+    background-color: #282e54;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
     width: 100%;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px 0;
-    z-index: 10; 
+    margin-top: auto; 
 }
 
-.planeswalker-nav-links-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.planeswalker-nav-links-container a {
-    color: white;
+.footer-logo {
+    height: 50px;
+    width: auto;
+}
+
+.footer-info {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-info a {
+    color: #cc3b14;
     text-decoration: none;
     margin: 0 10px;
     transition: color 0.3s ease;
 }
 
-.planeswalker-nav-links-container a:hover {
-    color: #cc3b14;
-}
-
-.copyright {
-    font-size: 14px;
-    text-align: center;
-    margin-top: 5px;
+.footer-info a:hover {
+    color: #fff;
 }

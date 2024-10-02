@@ -1,16 +1,10 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;                     
-    padding: 20px;                 
-    background-color: steelblue;     
-}
-
 .set-header {
     display: flex;    
     align-items: center;
     justify-content: center;
     gap: 20px;
     text-align: center;
+    padding-top: 70px;
 }
 
 .set-header img {
@@ -32,6 +26,7 @@ body {
     align-items: center;
     color: white;
     font-size: 30px;
+    text-align: center;
 }
 
 .image-container {

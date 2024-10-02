@@ -4,36 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="./css/index.css" />
+    
     <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <script defer src="./JS/index.js"></script>
     <title>MTG: League</title>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="topnav">
-      <div class="logo-title-container">
-          <a href="./index.html" class="logo-title-link">
-              <img class="navlogo" src="./images/MagicLogo.png" alt="Magic The Gathering Logo" />
-              <h1>THE LEAGUE</h1>
-          </a>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="./images/magic-logo-white.png" class="mtg-logo" alt="Magic The Gathering Logo">
+        <p>| THE LEAGUE</p>
+    </div>
+
+    <ul class="nav-links">
+
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <div class="menu">
+
+        <li><a href="./index.html">HOME</a></li>
+
+        <li class="services">
+          <a href="./allplaneswalker.html">PLANESWALKERS</a>
+
+          <ul class="dropdown">
+            <li><a href="./ajani.html">Ajani</a></li>
+            <li><a href="./chandra.html">Chandra</a></li>
+            <li><a href="./jace.html">Jace</a></li>
+            <li><a href="./liliana.html">Liliana</a></li>
+            <li><a href="./nissa.html">Nissa</a></li>
+          </ul>
+
+        </li>
+
+        <li class="services">
+            <a href="./allplaneswalker.html">PLANES</a>
+  
+            <ul class="dropdown">
+                <li><a href="./bloomburrow.html">Bloomburrow</a></li>
+                <li><a href="./dominaria.html">Dominaria United</a></li>
+                <li><a href="./duskmourn.html">Duskmourn</a></li>
+                <li><a href="./murders.html">Murders at Karlov Manor</a></li>
+              <li><a href="./outlawthunderjunction.html">Outlaws of Thunder Junction</a></li>
+            </ul>
+  
+          </li>
       </div>
-      <div class="nav-links-container">
-          <div class="nav-links">
-              <a href="./index.html">HOME</a>
-              <a href="./allplaneswalker.html">PLANESWALKER</a>
-              <a href="./allteams.html">PLANES</a>
-          </div>
-      </div>
-      <div class="avatar-container">
-          <img class="avatar" src="./images/avatar.png" alt="User Avatar" />
-          <div class="auth-links">
-              <a href="./login.html">Login</a>
-              <a href="./signup.html">Signup</a>
-          </div>
-      </div>
+    </ul>
   </nav>
-    <!-- Hero Image -->
+
     <section class="hero">
       <img
         src="./images/PlaneswalkerPantheon.png"
@@ -62,7 +84,6 @@
       </div>
     </section>
 
-    <!-- PLANESWALKER ROW GRID -->
      <h1 class="planeswalker-title">PLANESWALKERS</h1>
     <section id="planeswalker-grid">
 
@@ -123,7 +144,6 @@
       </a>
   </section>
 
-    <!-- Planeswalker Logos/Mana logos -->
     <h1 class="team-title">TEAMS</h1>
     <section id="team-grid">
 
@@ -184,27 +204,22 @@
       </a>
   </section>
 
-    <!-- FOOTER -->
+  <section>
     <footer>
-      <nav class="footer">
-        <div class="footer-logo-title-container">
-          <a href="./index.html" class="logo-title-link">
-            <img
-              class="navlogo"
-              src="./images/MagicLogo.png"
-              alt="Magic The Gathering Logo"
-            />
-            <h1>THE LEAGUE</h1>
-          </a>
-        </div>
-        <div class="footer-nav-links">
-          <a href="">HOME</a>
-          <a href="">TEAMS</a>
-          <a href="">PLANESWALKER</a>
-          <a href="">INFORMATION</a>
-          <h3>Designed by: Jason Harrel</h3>
-        </div>
-      </nav>
-    </footer>
+      <div class="footer">
+          <div class="logo">
+              <img src="./images/magic-logo-white.png" class="mtg-logo" alt="Magic The Gathering Logo">
+              <p>| THE LEAGUE</p>
+          </div>
+          <div class="planeswalker-nav-links-container">
+              <a href="./index.html">HOME</a>
+              <a href="./allplaneswalker.html">PLANESWALKERS</a>
+              <a href="./allteams.html">PLANES</a>
+          </div>
+          <div class="copyright">
+              <span>&copy;</span> Jason Harrel
+          </div>
+      </div>
+  </footer>
   </body>
 </html>

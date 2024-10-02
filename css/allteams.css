@@ -22,17 +22,6 @@ body {
     z-index: 1;
 }
 
-.otjLogoSet, .dskLogoSet, .mkmLogoSet, .blbLogoSet, .dmuLogoSet {
-    height: 50px;
-    width: 50px;
-    margin: 0 10px; 
-}
-
-#manaIconWhite, #manaIconBlue, #manaIconBlack, #manaIconRed, #manaIconGreen {
-    height: 50px;
-    width: 50px;
-}
-
 #hero {
     position: relative;
     height: 50vh;
@@ -131,6 +120,16 @@ body {
     color: white;
 }
 
+.icon-container {
+    margin-bottom: 1rem;
+}
+
+.icon-name-container img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 .plane-info h2 {
     font-size: 1.8rem;
     margin-top: 0.5rem;
@@ -157,14 +156,17 @@ footer {
 }
 
 .card-icon {
-    display: block;
-    height: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
     width: 50px;
-    object-fit: contain;
     filter: brightness(0) invert(1);
 }
 
 .plane-name {
+    display: flex;
+    font-size: 1.8rem;
     padding-left: 100px;
     text-transform: uppercase;
+    text-align: center;
 }

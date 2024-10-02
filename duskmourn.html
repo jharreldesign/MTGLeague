@@ -5,37 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./JS/axios/duskmourn.js" defer></script>
     <script src="./js/axios/setlogo.js" defer></script>
     <script defer src="./JS/allteams.js" defer></script>
-
+    <script defer src="./JS/axios/carddata.js" defer></script>
+    
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/cardsets.css" />
     <title>Duskmourn</title>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="topnav">
-        <div class="logo-title-container">
-            <a href="./index.html" class="logo-title-link">
-                <img class="navlogo" src="./images/MagicLogo.png" alt="Magic The Gathering Logo" />
-                <h1>THE LEAGUE</h1>
-            </a>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/magic-logo-white.png" class="mtg-logo" alt="Magic The Gathering Logo">
+            <p>| THE LEAGUE</p>
         </div>
-        <div class="nav-links-container">
-            <div class="nav-links">
-                <a href="./index.html">HOME</a>
-                <a href="./allplaneswalker.html">PLANESWALKER</a>
-                <a href="./allteams.html">PLANES</a>
+    
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="./index.html">HOME</a></li>
+                <li class="services">
+                    <a href="./allplaneswalker.html">PLANESWALKERS</a>
+                    <ul class="dropdown">
+                        <li><a href="./ajani.html">Ajani</a></li>
+                        <li><a href="./chandra.html">Chandra</a></li>
+                        <li><a href="./jace.html">Jace</a></li>
+                        <li><a href="./liliana.html">Liliana</a></li>
+                        <li><a href="./nissa.html">Nissa</a></li>
+                    </ul>
+                </li>
+                <li class="services">
+                    <a href="./allplaneswalker.html">PLANES</a>
+                    <ul class="dropdown">
+                        <li><a href="./bloomburrow.html">Bloomburrow</a></li>
+                        <li><a href="./dominaria.html">Dominaria United</a></li>
+                        <li><a href="./duskmourn.html">Duskmourn</a></li>
+                        <li><a href="./murders.html">Murders at Karlov Manor</a></li>
+                        <li><a href="./outlawthunderjunction.html">Outlaws of Thunder Junction</a></li>
+                    </ul>
+                </li>
             </div>
-        </div>
-        <div class="avatar-container">
-            <img class="avatar" src="./images/avatar.png" alt="User Avatar" />
-            <div class="auth-links">
-                <a href="./login.html">Login</a>
-                <a href="./signup.html">Signup</a>
-            </div>
-        </div>
+        </ul>
     </nav>
 
     <div class="set-header">
@@ -43,11 +55,29 @@
         <h1 class="set-title">Duskmourn</h1>
     </div>
     <p class="set-information">
-        Below you will recieve your team.
+        Duskmourn awaits, with your greatest fears come to life behind every door. An entire plane within a single house invites many questions. Who built it? Why is it here?
     </p>
 
     <section>
-    <div id="imageContainer" class="image-container"></div>
+    <div id="dskCardImagesContainer" class="image-container"></div>
     </section>
+
+    <section>
+        <footer>
+          <div class="footer">
+              <div class="logo">
+                  <img src="./images/magic-logo-white.png" class="mtg-logo" alt="Magic The Gathering Logo">
+                  <p>| THE LEAGUE</p>
+              </div>
+              <div class="planeswalker-nav-links-container">
+                  <a href="./index.html">HOME</a>
+                  <a href="./allplaneswalker.html">PLANESWALKERS</a>
+                  <a href="./allteams.html">PLANES</a>
+              </div>
+              <div class="copyright">
+                  <span>&copy;</span> Jason Harrel
+              </div>
+          </div>
+      </footer>
 </body>
 </html>

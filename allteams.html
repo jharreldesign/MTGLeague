@@ -5,53 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script defer src="./JS/allteams.js"></script>
-    
-    <link rel="stylesheet" href="./css/allteams.css" />
+    <script defer src="./JS/axios/setlogo.js"></script>
+
     <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/allteams.css" />
     <title>Planeswalker</title>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="topnav">
-        <div class="logo-title-container">
-            <a href="./index.html" class="logo-title-link">
-                <img class="navlogo" src="./images/MagicLogo.png" alt="Magic The Gathering Logo" />
-                <h1>THE LEAGUE</h1>
-            </a>
-        </div>
-        <div class="nav-links-container">
-            <div class="nav-links">
-                <a href="./index.html">HOME</a>
-                <a href="./allplaneswalker.html">PLANESWALKER</a>
-                <a href="./allteams.html">PLANES</a>
-            </div>
-        </div>
-        <div class="avatar-container">
-            <img class="avatar" src="./images/avatar.png" alt="User Avatar" />
-            <div class="auth-links">
-                <a href="./login.html">Login</a>
-                <a href="./signup.html">Signup</a>
-            </div>
-        </div>
-    </nav>
-    
-    
+<nav class="navbar">
+    <div class="logo">
+        <img src="./images/magic-logo-white.png" class="mtg-logo" alt="Magic The Gathering Logo">
+        <p>| THE LEAGUE</p>
+    </div>
 
-<!-- Hero Section -->
+    <ul class="nav-links">
+
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <div class="menu">
+
+        <li><a href="./index.html">HOME</a></li>
+
+        <li class="services">
+          <a href="./allplaneswalker.html">PLANESWALKERS</a>
+
+          <ul class="dropdown">
+            <li><a href="./ajani.html">Ajani</a></li>
+            <li><a href="./chandra.html">Chandra</a></li>
+            <li><a href="./jace.html">Jace</a></li>
+            <li><a href="./liliana.html">Liliana</a></li>
+            <li><a href="./nissa.html">Nissa</a></li>
+          </ul>
+
+        </li>
+
+        <li class="services">
+            <a href="./allplaneswalker.html">PLANES</a>
+  
+            <ul class="dropdown">
+                <li><a href="./bloomburrow.html">Bloomburrow</a></li>
+                <li><a href="./dominaria.html">Dominaria United</a></li>
+                <li><a href="./duskmourn.html">Duskmourn</a></li>
+                <li><a href="./murders.html">Murders at Karlov Manor</a></li>
+              <li><a href="./outlawthunderjunction.html">Outlaws of Thunder Junction</a></li>
+            </ul>
+  
+          </li>
+      </div>
+    </ul>
+  </nav>
+
 <section id="hero">
     <h1>Planes</h1>
     <p class="hero-description">Planeswalkers are the most powerful beings in all of the Magic: The Gathering world. This is a collection of five of the most powerful Planeswalkers.</p>
     <div class="hero-icons-container">
-        <img id="otjSetLogo" class="otjLogoSet" src="" alt="">
-        <img id="dskSetLogo" class="dskLogoSet" src="" alt="">
-        <img id="mkmSetLogo" class="mkmLogoSet" src="" alt="">
-        <img id="blbSetLogo" class="blbLogoSet" src="" alt="">
-        <img id="dmuSetLogo" class="dmuLogoSet" src="" alt="">
+        <img id="dskLogoContainer1" class="otjLogoSet" src="" alt="">
+        <img id="blbLogoContainer1" class="dskLogoSet" src="" alt="">
+        <img id="mkmLogoContainer1" class="mkmLogoSet" src="" alt="">
+        <img id="dmuLogoContainer1" class="blbLogoSet" src="" alt="">
+        <img id="otjLogoContainer1" class="dmuLogoSet" src="" alt="">
     </div>
 </section>
 
-    <!-- Planeswalkers Grid -->
     <section id="planeswalker-grid">
 
         <a href="./outlawthunderjunction.html" class="plane-card-link">
@@ -59,7 +75,7 @@
                 <img src="./images/all-teams-images/outlaws.jpg" alt="Anjani">
                 <div class="plane-info"> 
                     <div class="icon-name-container">
-                        <img id="cardSetIconOtj" class="card-icon" src="" alt="Outlaws of Thunder Junction Icon">
+                        <img id="otjLogoContainer2" class="card-icon" src="" alt="Outlaws of Thunder Junction Icon">
                     </div>
                     <h2 class="plane-name">Outlaws of Thunder Junction</h2>
                 </div>
@@ -72,7 +88,7 @@
                 <img src="./images/all-teams-images/bloomburrow.jpg" alt="Jace">
                 <div class="plane-info">
                     <div class="icon-name-container">
-                        <img id="cardSetIconBlb" class="card-icon" src="" alt="Bloomburrow Icon">
+                        <img id="blbLogoContainer2" class="card-icon" src="" alt="Bloomburrow Icon">
                     </div>
                     <h2 class="plane-name">Bloomburrow</h2>
                 </div>
@@ -84,9 +100,11 @@
                 <img src="./images/all-teams-images/duskmourn.jpg" alt="Liliana">
                 <div class="plane-info">
                     <div class="icon-name-container">
-                        <img id="cardSetIconDsk" class="card-icon" src="" alt="Duskmourn Icon">
+                        <div class="icon-container">
+                            <img id="dskLogoContainer2" class="card-icon" src="" alt="Duskmourn Icon">
+                        </div>
+                        <h2 class="plane-name">Duskmourn</h2>
                     </div>
-                    <h2 class="plane-name">Duskmourn</h2>
                 </div>
             </div>
         </a>
@@ -96,7 +114,7 @@
                 <img src="./images/all-teams-images/dominaria-united.jpg" alt="Chandra">
                 <div class="plane-info">
                     <div class="icon-name-container">
-                        <img id="cardSetIconDmu" class="card-icon" src="" alt="Dominaria United Icon">
+                        <img id="dmuLogoContainer2" class="card-icon" src="" alt="Dominaria United Icon">
                     </div>
                     <h2 class="plane-name">Dominaria United</h2>
                 </div>
@@ -108,18 +126,12 @@
                 <img src="./images/all-teams-images/murders-karlov.jpg" alt="Nissa">
                 <div class="plane-info">
                     <div class="icon-name-container">
-                        <img id="cardSetIconMkm" class="card-icon" src="" alt="Murders at Karlov Manor Icon">
+                        <img id="mkmLogoContainer2" class="card-icon" src="" alt="Murders at Karlov Manor Icon">
                     </div>
                     <h2 class="plane-name">Murders at Karlov Manor</h2>
                 </div>
             </div>
         </a>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <img class="footer-logo" src="./images/MagicLogo.png" alt="">
-    </footer>
-
 </body>
 </html>
