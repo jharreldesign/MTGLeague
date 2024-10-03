@@ -15,17 +15,20 @@
 </head>
 <body>
 
-<nav class="navbar">
-    <div class="logo">
-        <img src="./images/magic-logo-white.png" class="mtg-logo" alt="Magic The Gathering Logo">
-        <p>| THE LEAGUE</p>
-    </div>
-
-    <ul class="nav-links">
-        <input type="checkbox" id="checkbox_toggle" />
+    <nav class="navbar">
+        <a href="./index.html">
+        <div class="logo">
+            <img src="./images/magic-logo-white.png" class="mtg-logo" alt="Magic The Gathering Logo">
+            <p>| THE LEAGUE</p>
+        </div>
+        </a>
+    
+        <input type="checkbox" id="checkbox_toggle" class="hamburger-checkbox" />
         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <div class="menu">
+    
+        <ul class="nav-links">
             <li><a href="./index.html">HOME</a></li>
+    
             <li class="services">
                 <a href="./allplaneswalker.html">PLANESWALKERS</a>
                 <ul class="dropdown">
@@ -36,8 +39,9 @@
                     <li><a href="./nissa.html">Nissa</a></li>
                 </ul>
             </li>
+    
             <li class="services">
-                <a href="./allplaneswalker.html">PLANES</a>
+                <a href="./allteams.html">PLANES</a>
                 <ul class="dropdown">
                     <li><a href="./bloomburrow.html">Bloomburrow</a></li>
                     <li><a href="./dominaria.html">Dominaria United</a></li>
@@ -46,9 +50,8 @@
                     <li><a href="./outlawthunderjunction.html">Outlaws of Thunder Junction</a></li>
                 </ul>
             </li>
-        </div>
-    </ul>
-</nav>
+        </ul>
+    </nav>
 
 <div class="set-header">
     <img src="" alt="" id="cardSetIconDmu" />

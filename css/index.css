@@ -4,6 +4,14 @@ h1 {
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
+
+.logo-link {
+    text-decoration: none !important;
+}
+
 .hero {
     position: relative;
     width: 100%;
@@ -212,4 +220,193 @@ p {
 .planeswalker-info h2 {
     font-size: 1.8rem;
     margin-top: 0.5rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 70px;
+    padding: 0;
+}
+
+.logo {
+    display: flex; 
+    align-items: center; 
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    padding-left: 15px;
+}
+
+.logo p {
+    font-size: 30px;
+    padding-left: 5px;
+    color: #cc3b14;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding-right: 40px;
+}
+
+.nav-links .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: black; 
+    list-style: none;
+    padding: 15px; 
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.dropdown li {
+    margin: 10px 0; 
+}
+
+.dropdown a {
+    color: white; 
+    padding: 10px 15px; 
+    display: block; 
+    transition: background-color 0.3s ease;
+}
+
+.dropdown a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+.main-content {
+    margin-top: 70px;
+    padding: 20px; 
+    color: #fff; 
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+    z-index: 10; 
+}
+
+.planeswalker-nav-links-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.planeswalker-nav-links-container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.planeswalker-nav-links-container a:hover {
+    color: #cc3b14;
+}
+
+.copyright {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: white;
+        z-index: 1000;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        padding: 10px 20px;
+        text-align: left;
+    }
+
+    .nav-links a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .nav-links a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .hamburger-checkbox {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    
+    #checkbox_toggle:checked + .hamburger + .nav-links {
+        display: flex;
+    }
 }
