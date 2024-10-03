@@ -448,3 +448,54 @@ html {
     height: auto;
   }
 }
+
+.hero-topnav {
+  background-color: #282e54;
+  padding: 20px; 
+  overflow: hidden; 
+}
+
+.hero-nav-links {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center;
+  gap: 20px; 
+  font-size: 30px;
+}
+
+.hero-nav-links h3 {
+  color: white; 
+  margin: 0; 
+  padding-right: 10px; 
+}
+
+.hero-nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  white-space: nowrap; 
+}
+
+.hero-nav-links a:hover {
+  color: #cc3b14; 
+}
+
+
+@media (max-width: 768px) {
+  .hero-nav-links {
+    font-size: 20px; 
+  }
+  .hero-nav-links a {
+    margin: 0 5px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-nav-links {
+    font-size: 18px; 
+  }
+  .hero-nav-links h3 {
+    font-size: 16px; 
+  }
+}

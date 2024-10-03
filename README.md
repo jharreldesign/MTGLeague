@@ -19,3 +19,8 @@ The game of Magic: The Gathering is a strategy based card game. There has been o
 The initial idea for the layout of this site is to create a league-wide collection of data that would represent what an American sports site entails. The teams, standings, home page with news and information of who the teams and players are.
 
 ![MTG League](https://github.com/user-attachments/assets/d0df8fd6-1750-42df-98fb-73df7e3637a9)
+
+# Special thanks to:
+
+![Wizards of the Coast](https://magic.wizards.com/en)
+![Scryfall](https://scryfall.com/docs/api)

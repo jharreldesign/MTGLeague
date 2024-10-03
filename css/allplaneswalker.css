@@ -192,3 +192,79 @@ footer {
         display: flex;
     }
 }
+
+
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 2rem; 
+    }
+
+    #hero p {
+        font-size: 1.2rem; 
+    }
+
+    #planeswalker-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem; 
+    }
+
+    .planeswalker-info h2 {
+        font-size: 1.5rem; 
+    }
+
+    .hero-icons-container {
+        flex-direction: column; 
+    }
+
+    .icon-name-container .mana {
+        height: 80px; 
+        width: 80px;
+    }
+
+    .footer-logo {
+        height: 80px; 
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem; 
+    }
+
+    #hero p {
+        font-size: 1.4rem; 
+    }
+
+    #planeswalker-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .planeswalker-info h2 {
+        font-size: 1.6rem; 
+    }
+
+    .hero-icons-container {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+}
+
+@media (max-width: 1024px) {
+    #hero h1 {
+        font-size: 2.8rem; 
+    }
+
+    #hero p {
+        font-size: 1.5rem; 
+    }
+
+    .planeswalker-card {
+        margin: 1rem; 
+    }
+
+    .planeswalker-card img {
+        height: 250px;
+        object-fit: cover; 
+    }
+}
