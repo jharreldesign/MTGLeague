@@ -8,17 +8,25 @@ const cardImgContainerOutlaws = document.querySelector('#cardImgContainerOutlaws
 const cardImagesContainerBloomburrow = document.querySelector('#imageContainer');
 
 const crdImgBlb = async () => {
+    //we fetch the data from our API call
     let response = await axios.get('https://api.scryfall.com/cards/search?q=e%3Ablb');
-    
+
+
+    //We extract the image_uris.large from the array that is returned to us and we map over them to only target those images
+    //By maping we get a new array of all the targeted large image links
     const imageUris = response.data.data.map(card => card.image_uris.large);
 
     // Shuffle the array of image URIs
+    // By using sort() we randomly return the values which randomizes the results
     const shuffledUris = imageUris.sort(() => 0.5 - Math.random());
 
     // Limit to the first 20 images
+    // We get this by using slice(), creating a new array containing the first 30 elements from our sort call. 
     const limitedUris = shuffledUris.slice(0, 30);
 
     // Create and append new images
+    // we iterate over limitedUris array that was created
+    // we then append each img element to a container called cardImagesContainerBloomburrow
     limitedUris.forEach(uri => {
         const img = document.createElement('img');
         img.src = uri;
